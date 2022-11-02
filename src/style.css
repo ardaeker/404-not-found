@@ -1,0 +1,332 @@
+/*
+  ===================
+    Table Of Contents
+  ===================
+      -  Google Fonts
+      1. Reset (minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css)
+      2. Custom Properties And Utility
+      3. Global Styles
+      4. Typography
+      5. Layout
+      6. Components
+        6.1 Button
+      7. Media Queries
+         - Layout 52em
+         - Layout 82em
+         - Typography 82em 
+*/
+
+/*
+  =================
+    - Google Fonts
+  =================
+        font-family: 'Inconsolata', monospace; 700
+        font-family: 'Montserrat', sans-serif; 400 700
+        font-family: 'Space Mono', monospace; 500 700
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;700&family=Space+Mono:wght@400;700&display=swap');
+
+/*
+  ==========
+    1. Reset
+  ==========
+*/
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal
+}
+
+ul {
+  list-style: none
+}
+
+button,
+input,
+select {
+  margin: 0
+}
+
+html {
+  box-sizing: border-box
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%
+}
+
+iframe {
+  border: 0
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+td,
+th {
+  padding: 0
+}
+
+/*
+  ==================================
+    2. Custom Properties And Utility
+  ==================================
+*/
+
+/*
+  ==================
+    3. Global Styles
+  ==================
+*/
+
+body {
+  min-height: 100vh;
+}
+
+/*
+  ===============
+    4. Typography
+  ===============
+*/
+
+.header-h2 {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.563rem;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.main-h1 {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4.438rem;
+  letter-spacing: -0.035em;
+  color: #333333;
+}
+
+.main-p {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.688rem;
+  letter-spacing: -0.035em;
+}
+
+.main-a {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.313rem;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer-p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.063rem;
+  color: #BDBDBD;
+}
+
+.footer-a {
+  font-weight: 700;
+  color: #BDBDBD;
+}
+
+/*
+  ===========
+    5. Layout
+  ===========
+*/
+
+header {
+  margin-top: 2.5em;
+  margin-bottom: 4em;
+}
+
+.header-h2 {
+  padding: 0 0 0 1.5em;
+}
+
+figure {
+  padding: 0 2.75em;
+  margin-bottom: 3.75em;
+  object-fit: cover;
+  max-width: 52.313em;
+}
+
+.main-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  padding: 0 0 0 1.438em;
+  margin-bottom: 7.125em;
+}
+
+.main-h1 {
+  margin-bottom: 1.875em;
+  padding-left: 0.063em;
+}
+
+.main-p {
+  margin-bottom: 4.125em;
+}
+
+footer {
+  padding-bottom: 1.5em;
+}
+
+.footer-p {
+  text-align: center;
+}
+
+/*
+  ===============
+    6. Components
+  ===============
+      6.1 Buttons
+*/
+
+.btn {
+  padding-left: 0.063em;
+}
+
+.main-a {
+  background-color: black;
+  padding: 1.5em 2.688em 1.438em 2.688em;
+}
+
+/*
+  ==================
+    7. Media Queries
+  ==================
+*/
+
+@media screen and (min-width:52.313em) {
+  /*
+  =============
+    Layout 52em 
+  =============
+  */
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    align-self: flex-start;
+  }
+}
+
+@media screen and (min-width:82.813em) {
+  /*
+  =============
+    Layout 82em 
+  =============
+  */
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header {
+    margin-bottom: 12.5em;
+
+  }
+
+  .header-h2 {
+    padding: 0 0 0 4.813em;
+  }
+
+  .content {
+    padding: 0 7.438em 0 1.438em;
+    margin-bottom: 7.125em;
+  }
+
+  .main-p {
+    padding-right: 12.75em;
+  }
+
+  figure {
+    padding: 0 7.375em 0 4.813em;
+    min-width: 33.125em;
+    margin-bottom: 3.75em;
+  }
+
+  /*
+  =================
+    Typography 82em 
+  =================
+  */
+
+  .main-h1 {
+    font-size: 4rem;
+    line-height: 5.938rem;
+  }
+
+  .main-p {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+}
